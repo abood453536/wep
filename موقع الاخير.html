@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع</title>
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    <style>
+        body, .container, .navbar, .card-body, .form-control, h2, p, .nav-link, .card-title, .accordion-body {
+            text-align: right;
+        }
+        
+        /* إضافة مساحات بيضاء حول الصور */
+        .card-img-top, .carousel-item img {
+            padding: 20px; /* زيادة الحواف الداخلية */
+            background-color: white; /* خلفية بيضاء حول الصورة */
+            border-radius: 15px; /* جعل الزوايا أكثر نعومة */
+            display: block;
+            margin: auto;
+        }
+        
+        .img-fluid {
+            margin: 15px; /* زيادة الهوامش حول الصور */
+            padding: 15px; /* زيادة الحواف الداخلية */
+            background-color: white; /* خلفية بيضاء */
+            border-radius: 15px; /* زوايا ناعمة */
+            display: block;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+<div class="container">
+  <!-- شريط التنقل -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    <a class="navbar-brand" href="#">
+        <img src="images/LOGO.png" alt="Logo" width="116" height="112" class="rounded-circle img-fluid"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span> 
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"> <a class="nav-link" href="#home">الرئيسية</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#store">متجر</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#apartments">شقق</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#golf_courses">ملاعب جولف</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#restaurants">مطاعم ومقاهي</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#booking">حجز</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="#booking">اتصل بنا</a> </li>
+        </ul>
+    </div>
+  </nav>
+
+  <!-- القسم الأول - الصفحة الرئيسية -->
+  <section id="home">
+      <h2>مرحبًا بك في هول ان ون</h2>
+    <p>أفضل مستلزمات الجولف بجودة عالية وأسعار مميزة</p>
+</section>
+<div id="carouselExampleIndicators1" class="carousel slide mt-3" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active"> 
+        <img src="images/ABOOD4.jfif" class="d-block mx-auto img-fluid rounded" alt="First slide" style="width: 100%; height: auto;" onerror="this.src='images/placeholder.jpg'">
+      </div>
+      <div class="carousel-item"> 
+        <img src="images/شسش.jfif" alt="Second slide" class="d-block mx-auto img-fluid" style="width: 100%; height: auto;" onerror="this.src='images/placeholder.jpg'">
+      </div>
+      <div class="carousel-item"> 
+        <img src="images/ABOOD1.jfif" alt="Third slide" class="d-block mx-auto img-fluid ABOOD1" style="width: 100%; height: auto;" onerror="this.src='images/placeholder.jpg'">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> 
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+    </a> 
+    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> 
+        <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+    </a> 
+  </div>
+
+  <!-- قسم الأحداث -->
+  <div class="accordion mt-4" id="eventsAccordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne">الأحداث المهمة</a> </h5>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#eventsAccordion">
+        <div class="card-body">فعاليات ومهرجانات متنوعة</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseTwo">المحاضرات</a> </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#eventsAccordion">
+        <div class="card-body">محاضرات عن التسويق، الإدارة، والضيافة</div>
+      </div>
+  <!-- القسم الثاني - المتجر -->
+  <section id="store">
+      <h2 class="md-4">المتجر</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/download.jfif"><img src="images/download.jfif" alt="طابة جولف" width="318" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/download'"></a>
+            <div class="card-body">
+              <h5 class="card-title">طابة جولف</h5>
+              <a href="#" class="btn btn-primary">اشتري بـ 1 دينار</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/ن.jfif"><img src="images/aboode.jfif" alt="مضرب جولف" width="180" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/aboode.jfif'"></a>
+            <div class="card-body">
+              <h5 class="card-title">مضرب جولف</h5>
+              <a href="#" class="btn btn-primary">اشتري بـ 20 دينار</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/ك.jfif"><img src="images/as.jfif" alt="شنتة جولف" width="318" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/as.jfif'"></a>
+            <div class="card-body">
+              <h5 class="card-title">شنتة جولف</h5>
+              <a href="#" class="btn btn-primary">اشتري بـ 30 دينار</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- القسم الثالث - الشقق -->
+  <section id="apartments">
+      <h2 class="md-4">الشقق</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/th.jfif"><img src="images/th.jfif" alt="شقة 1" width="318" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/th.jfif'"></a>
+            <div class="card-body">
+				 <h5 class="card-title">شقه رخيصه</h5>
+              <a href="#" class="btn btn-primary">احجز بـ 30 دينار</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/OIP.jfif"><img src="images/gh.jfif" alt="شقة 2" width="318" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/gh.jfif'"></a>
+            <div class="card-body">
+				 <h5 class="card-title">شقه غاليه</h5>
+              <a href="#" class="btn btn-primary">احجز بـ 50 دينار</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- القسم الرابع - المطاعم -->
+  <section id="restaurants">
+      <h2 class="md-4">مطاعم</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/ABOOD5.jfif"><img src="images/ABOOD5.jfif" alt="مطعم 1" width="318" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/ABOOD5.jfif'"></a>
+            <div class="card-body">
+				 <h5 class="card-title">مطعم غالي</h5>
+              <a href="#" class="btn btn-primary">احجز بـ 50 دينار</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/restrunt.jfif"><img src="images/yu.jfif" alt="مطعم 2" width="318" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/yu.jfif'"></a>
+            <div class="card-body">
+				 <h5 class="card-title">مطعم رخيص</h5>
+              <a href="#" class="btn btn-primary">احجز بـ 15 دينار</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- القسم الخامس - الملاعب -->
+  <section id="golf_courses">
+      <h2 class="md-4">ملاعب جولف</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/th (1).jfif"><img src="images/ii.jfif" alt="ملعب جولف 1" width="318" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/ii.jfif'"></a>
+            <div class="card-body">
+				 <h5 class="card-title">ملعب رخيص</h5>
+              <a href="#" class="btn btn-primary">احجز بـ 30 دينار</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/th (2).jfif"><img src="images/gf.jfif" alt="ملعب جولف 2" width="318" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/gf.jfif'"></a>
+            <div class="card-body">
+				 <h5 class="card-title">ملعب وسط</h5>
+              <a href="#" class="btn btn-primary">احجز بـ 50 دينار</a>
+            </div>
+           </div>
+			</div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="images/th (2).jfif"><img src="images/fas.jfif" alt="ملعب جولف 3" width="318" height="180" class="card-img-top img-fluid rounded" style="width: 100%; height: auto;" onerror="this.src='images/fas.jfif'"></a>
+            <div class="card-body">
+				 <h5 class="card-title">ملعب خاص</h5>
+              <a href="#" class="btn btn-primary">احجز بـ 100 دينار</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- القسم السادس - حجز -->
+  <section id="booking">
+    <h2 class="mt-4">احجز غرفتك الآن</h2>
+	  <section id="contact">
+      <h2 class="mt-4">اتصل بنا</h2>
+      <p>للاستفسارات، يمكنك الاتصال بنا على الرقم: <strong>0781452714</strong></p>
+      <form id="contactForm">
+          <label for="name">الاسم:</label>
+          <input type="text" id="name" class="form-control" required><br>
+          
+          <label for="email">البريد الإلكتروني:</label>
+          <input type="email" id="email" class="form-control" required><br>
+          
+		        
+      <label for="checkin">تاريخ الوصول</label>
+      <input type="date" id="checkin" class="form-control" required><br><br>
+      
+      <label for="checkout">تاريخ المغادرة</label>
+      <input type="date" id="checkout" class="form-control" required><br><br>
+		  
+          <label for="message">رسالتك:</label>
+          <textarea id="message" class="form-control" rows="4" required></textarea><br>
+          
+          <button type="submit" class="btn btn-primary">إرسال</button>
+      </form>
+  </section>
+</div>
+
+<!-- الفوتر -->
+<footer>
+    <div class="container">
+        <p>جميع الحقوق محفوظة &copy; 2025 | هول إن ون</p>
+        <p>
+            <a href="#home">الرئيسية</a> | 
+            <a href="#store">المتجر</a> | 
+            <a href="#apartments">الشقق</a> | 
+            <a href="#golf_courses">ملاعب الجولف</a> | 
+            <a href="#restaurants">المطاعم</a> | 
+            <a href="#booking">الحجز</a> | 
+            <a href="#contact">اتصل بنا</a>
+        </p>
+    </div>
+</footer>
+</form>
+  </section>
+</div>
+
+<!-- سكريبتات جافاسكريبت -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+
+</body>
+</html>
